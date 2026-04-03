@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Light & Power - Apply</title>
+<style>
+body { margin:0; font-family: Arial, sans-serif; background:#f4f4f4; }
+.container { max-width:600px; margin:30px auto; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+.header { background:linear-gradient(90deg,#0f9d58,#2e7d32); color:white; padding:20px; text-align:center; }
+.header h1 { margin:0; }
+.form { padding:20px; }
+input, select { width:100%; padding:12px; margin:10px 0; border-radius:6px; border:1px solid #ccc; }
+button { width:100%; padding:15px; background:#2e7d32; color:white; border:none; border-radius:6px; font-size:16px; cursor:pointer; }
+button:hover { background:#256628; }
+.footer { text-align:center; font-size:13px; color:#777; padding:15px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Global Light & Power</h1>
+<p>Car Wrap Program</p>
+</div>
+
+<div class="form">
+<h3>Apply Now</h3>
+
+<form action="https://formspree.io/f/YOUR_ID" method="POST" enctype="multipart/form-data">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<!-- ADDRESS -->
+<input type="text" name="address1" placeholder="Street Address" required>
+<input type="text" name="address2" placeholder="Apartment, Suite (optional)">
+<input type="text" name="city" placeholder="City" required>
+<input type="text" name="state" placeholder="State / Province" required>
+<input type="text" name="zip" placeholder="ZIP / Postal Code" required>
+
+<select name="country" required>
+<option value="">Select Country</option>
+<option>United States</option>
+<option>Canada</option>
+</select>
+
+<select name="vehicle" required>
+<option value="">Vehicle Type</option>
+<option>Car</option>
+<option>SUV</option>
+<option>Truck</option>
+</select>
+
+<!-- FILE UPLOADS -->
+<label>Upload Driver's License (Front)</label>
+<input type="file" name="license_front" accept="image/*,application/pdf" required>
+
+<label>Upload Driver's License (Back)</label>
+<input type="file" name="license_back" accept="image/*,application/pdf" required>
+
+<label>Upload Car Photo</label>
+<input type="file" name="car_photo" accept="image/*" required>
+
+<!-- HIDDEN SETTINGS -->
+<input type="hidden" name="_subject" value="New Car Wrap Application">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_autoresponse" value="Thank you for applying to Global Light & Power Car Wrap Program. We will review your application and contact you shortly.">
+
+<button type="submit">Apply Now</button>
+
+</form>
+</div>
+
+<div class="footer">
+Drive. Earn. Simple.
+</div>
+
+</div>
+
+</body>
+</html>
